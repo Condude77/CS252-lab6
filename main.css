@@ -1,0 +1,87 @@
+html, body {
+      margin: 0;
+      padding: 0;
+      background-image:url(Light_Brown.png);
+      font-family: Arial, Helvetica, sans-serif;
+      }
+
+#navContent{
+      margin:auto;
+      width:800px;
+      height:400px;
+      position:relative;
+      overflow:hidden;
+      }
+
+#game1{
+      margin:auto;
+      width:800px;
+      height:400px;
+      right:0px;
+      position:absolute;
+      }
+
+#game2{
+      margin:auto;
+      width:800px;
+      height:400px;
+      right:-800px;
+      position:absolute;
+      }
+
+.questionText{
+      font-size:27px;
+      color:#000000;
+      }
+
+.option{
+      width:400px;
+      height:30px;
+      margin:15px;
+      font-size:18px;
+      color:#000000;
+      padding:2px;
+      padding-left:10px;
+      border: 2px solid white;
+      cursor:pointer;
+      background-color:#FFFFFF;
+      }
+
+.option:hover{
+      border:#FF9500 solid 2px;
+      color:#FF9500;
+      }
+
+#topbar{
+      height:50px;
+      margin:auto;
+      margin-top:50px;
+      color:#4D4D4D;
+      font-size:36px;
+      font-family:Arial, Helvetica, sans-serif;
+      width:800px;
+      border-bottom:solid white 1px;
+      }
+.spacer{
+      height:30px;
+      }
+
+.right{
+      width:150px;
+      padding:5px;
+      font-size:30px;
+      color:#FFFFFF;
+      background-color:#009900;
+      font-family:Arial, Helvetica, sans-serif;
+      text-align:center;
+      }
+   
+.wrong{
+      width:150px;
+      padding:5px;
+      font-size:30px;
+      color:#FFFFFF;
+      background-color:#CC3300;
+      font-family:Arial, Helvetica, sans-serif;
+      text-align:center;
+      }
