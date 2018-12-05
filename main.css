@@ -48,8 +48,8 @@ html, body {
       }
 
 .option:hover{
-      border:#FF9500 solid 2px;
-      color:#FF9500;
+      border:#3399FF solid 2px;
+      color:#3399FF;
       }
 
 #topbar{
@@ -57,10 +57,10 @@ html, body {
       margin:auto;
       margin-top:50px;
       color:#4D4D4D;
-      font-size:36px;
+      font-size:46px;
       font-family:Arial, Helvetica, sans-serif;
       width:800px;
-      border-bottom:solid white 1px;
+      border-bottom:solid white 2px;
       }
 .spacer{
       height:30px;
