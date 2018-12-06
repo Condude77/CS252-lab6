@@ -31,7 +31,7 @@ $(document).ready(function () {
 	["What is the internet a collection of?", "Networks, routers, and hosts", "Interfaces, ethernet, routers", "Applications, transport, layering"],
 	["What are the two parts of an IP address?", "Network ID and host ID", "Router ID and network ID", "Interface ID and network ID"],
 	["What is a subnet mask?", "An interface parameter that tells the number of bits for the network number", "The hidden IP address", "The route to particular destinations"],
-	["What are the 4 components of a Dynamic Host Configuration Protocal(DHCP)?", "Local IP address, subnet mask, default router, DNS server", "Network ID, subnet mask, global internet, DNS server", "Local IP address, secret mask, global host, DNS server"],
+	["What are the 4 components of a Dynamic Host Configuration Protocol(DHCP)?", "Local IP address, subnet mask, default router, DNS server", "Network ID, subnet mask, global internet, DNS server", "Local IP address, secret mask, global host, DNS server"],
 	["What are the two transport protocols?", "UDP and TCP", "ELF and JPG", "IMG and TTPS"],
 	["What is Structured Query Language(SQL)?", "The standard language used to manipulate databases", "The standard language for low level programming", "The standard language for programming websites"],
 	["What are the three different SQL databases?", "MySQL, Orace, and Microsoft SQL", "SQL, MSQL, and Super SQL", "MySQL, Enterprise, and SQL"],
@@ -49,7 +49,16 @@ $(document).ready(function () {
 	["What is external fragmentation?", "Small non-contiguous block allocation such that they cannot satisfy the request", "Waste of memory due to the allocator returning a larger block than the memory requested", "A way to allow for constant time coalescing"],
 	["What is internal fragmentation?", "Waste of memory due to the allocator returning a larger block than the memory requested", "Small non-contiguous block allocation such that they cannot satisfy the request", "A way to allow for constant time coalescing"],
 	["What are the yellow pages?", "User information and passwords stored in a server", "A phone book", "Where everything is stored on a computer"],
-	["What is an Inode?", "A file or directory", "A program", "A web browser"]]
+	["What is an Inode?", "A file or directory", "A program", "A web browser"],
+	["What does UDP mean?", "User Datagram Protocol", "Usage Diagram Protocol", "User Diagnostic Protocol"],
+	["What does TCP mean?", "Transmission Control Protocol", "Triangular Category Protocol", "Topological Control Protocol"],
+	["What does NAT mean?", "Network Address Translation", "Neutral Address Transmission", "National Address Transport"],
+	["What are system calls?", "A way user programs request services from the OS", "A device interrupt, such as moving the mouse", "An event that requires immediate attention"],
+	["What is an interrupt?", "An event that requires immediate attention", "A way user programs request services from the OS", "Talking in class when you should not be"],
+	["Is polling synchronous or asynchronous?", "Synchronous", "Asynchronous", "Neither"],
+	["Is an interrupt synchronous or asynchronous?", "Asynchronous", "Synchronous", "Neither"],
+	["What is the kernal mode?", "A mode where the CPU can execute any instruction and modify and location in memory", "A mode where the CPU has limited access to instructions and can modify some locations in memory", "A mode where the CPU has no access and cannot modift anything"],
+	["What is the user mode?", "A mode where the CPU has limited access to instructions and can modify some locations in memory", "A mode where the CPU can execute any instruction and modify and location in memory", "A mode where the CPU has no access and cannot modift anything"]]
 
 	numberOfQuestions=questionBank.length;
 	randomizeQuestions();
@@ -114,7 +123,8 @@ $(document).ready(function () {
 	}//change question
 	
 	function displayFinalSlide(){
-		$(stage).append('<div class="questionText">Good Luck on Exams!<br><br>Total questions: '+numberOfQuestions+'<br>Correct answers: '+score+'</div>');
+		var percent=Math.floor((score/numberOfQuestions)*100);
+		$(stage).append('<div class="questionText">Good Luck on Exams!<br><br>Total questions: '+numberOfQuestions+'<br>Correct answers: '+score+'<br>Percentage: '+percent+'%</div>');
 		
 	}//display final slide
 });//doc ready
