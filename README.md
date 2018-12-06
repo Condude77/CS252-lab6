@@ -4,5 +4,5 @@
 # Screenshot: https://imgur.com/a/8kDFrNa
 # Description: A quiz that will help CS students at Purdue study for CS 252.
 # GitHub: https://github.com/Condude77/CS252-lab6
-# YouTube: 
+# YouTube: https://youtu.be/ahnO774oDco
 # Dependencies: JQuery, Netlify
